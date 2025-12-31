@@ -20,7 +20,6 @@ function checkAnagram() {
     const s = input1.value.toLowerCase().trim();
     const t = input2.value.toLowerCase().trim();
 
-    // Internal helper to reset UI after 4 seconds
     const startResetTimer = () => {
         btn.disabled = true;
         setTimeout(() => {
@@ -28,17 +27,17 @@ function checkAnagram() {
             input2.value = "";
             resultDiv.innerText = "";
             resultDiv.className = "result-text";
-            resultDiv.style.color = ""; // Resets warning color if any
+            resultDiv.style.color = ""; 
             btn.disabled = false;
             input1.focus();
         }, 4000);
     };
 
-    // Validation: Check if inputs are empty
+
     if (!s || !t) {
         resultDiv.innerText = "Please enter both words";
         resultDiv.style.color = "#fbbf24";
-        startResetTimer(); // Triggers the 4-second reset for the warning
+        startResetTimer(); 
         return;
     }
 
@@ -51,7 +50,7 @@ function checkAnagram() {
         resultDiv.className = "result-text not-anagram";
     }
 
-    startResetTimer(); // Triggers the 4-second reset for results
+    startResetTimer();
 }
 
 /* LOGIC BREAKDOWN:
