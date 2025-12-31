@@ -1,4 +1,4 @@
-# Anagram Checker Pro
+# Anagram Checker
 
 A high-performance web application designed to determine if two strings are anagrams. This project combines an optimized data structure approach with a modern, responsive user interface.
 
